@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Playfair+Display:ital,wght@1,700&family=Poppins:wght@300;400&family=Press+Start+2P&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    padding-top: 70px;
+    background: linear-gradient(to right, #b3cdd1, #ffecb3);
+   
+    color: #333;
+}
+
+/* Rest of your existing styles remain unchanged */
+
+
+/* Navbar css */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 6px -6px gray;
+    --webkit-box-shadow: 0px 8px 6px -6px gray;
+    border-bottom: solid gray !important;
+}
+
+.nav-link {
+    font-weight: 300 !important;
+}
+
+.active {
+    border-bottom: 1.5px solid black;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Footer CSS  */
+.footer {
+    color: white;
+    padding: 25px;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: #ffefba;
+    border-bottom: #ffefba;
+}
+
+/* Page Not Found CSS */
+.pnf {
+    display: flex;
+    min-height: 65vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pnf-title {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.pnf-heading {
+    font-weight: normal;
+}
+
+.pnf-btn {
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pnf-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* contact Us */
+.contactus {
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* product link */
+
+.product-link {
+    text-decoration: none;
+    color: black !important;
+}

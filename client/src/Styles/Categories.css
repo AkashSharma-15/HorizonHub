@@ -1,0 +1,36 @@
+/* Categories.css */
+
+.categories-container {
+    margin-top: 100px;
+}
+
+.category-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background: linear-gradient(to right, #b3cdd1, #ffecb3);
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.cat-btn {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    background: linear-gradient(to right, #3498db, #2980b9);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cat-btn:hover {
+    color: #fff; /* White text color on hover */
+    background: linear-gradient(to right, #2980b9, #3498db);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
