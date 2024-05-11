@@ -21,7 +21,7 @@ function ProductDetail() {
             setProduct(data?.product);
             getSimilarProduct(data?.product._id, data?.product.category._id);
         } catch (error) {
-            console.log(error);
+            // console.log(error);
         }
     };
 
@@ -35,7 +35,7 @@ function ProductDetail() {
             const { data } = await axios.get(`/api/v1/product/related-product/${pid}/${cid}`);
             setRelatedProducts(data?.products);
         } catch (error) {
-            console.log(error);
+            // console.log(error);
         }
     };
 
@@ -87,7 +87,7 @@ function ProductDetail() {
                             <div className="card-name-price">
                                 <h5 className="card-title">{p.name}</h5>
                                 <h5 className="card-title card-price">
-                                    {p.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
+                                    {p.price.toLocaleString('en-US', { style: 'currency', currency: 'INR' })}
                                 </h5>
                             </div>
                             <p className="card-text ">{p.description.substring(0, 60)}...</p>

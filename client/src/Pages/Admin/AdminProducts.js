@@ -14,7 +14,7 @@ function AdminProducts() {
             const { data } = await axios.get("/api/v1/product/get-product");
             setProducts(data.products);
         } catch (error) {
-            console.log(error);
+            // console.log(error);
             toast.error("Someething Went Wrong");
         }
     };

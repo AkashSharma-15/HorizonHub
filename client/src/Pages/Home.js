@@ -28,7 +28,7 @@ function Home() {
         setCategories(data?.category);
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
 
@@ -47,7 +47,7 @@ function Home() {
 
     } catch (error) {
       setLoading(false)
-      console.log(error)
+      // console.log(error)
     }
   }
 
@@ -67,7 +67,7 @@ function Home() {
       const { data } = await axios.get("/api/v1/product/product-count");
       setTotal(data?.total);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
 
@@ -96,7 +96,7 @@ function Home() {
       setProducts(data?.products)
 
     } catch (error) {
-      console.log(error)
+      // console.log(error)
     }
   }
 
@@ -109,7 +109,7 @@ function Home() {
       setLoading(false);
       setProducts([...products, ...data?.products]);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       setLoading(false);
     }
   };
@@ -137,7 +137,7 @@ function Home() {
           {/* Category filter */}
 
           <h4 className="text-center"> Filter By Category</h4>
-          <div className="d-flex flex-column">
+          <div className="d-flex flex-column ">
             {categories?.map((c) => (
               <Checkbox
                 key={c._id}
@@ -151,7 +151,7 @@ function Home() {
           {/* Price filter */}
 
           <h4 className="text-center mt-4"> Filter By Prices</h4>
-          <div className="d-flex flex-column">
+          <div className="d-flex flex-column ">
             <Radio.Group onChange={e => setRadio(e.target.value)}  >
               {Prices?.map(p => (
                 <div key={p._id}>
@@ -172,7 +172,8 @@ function Home() {
           <div className="d-flex flex-wrap">
 
             {products?.map(p => (
-              <div className="card m-2" style={{ width: '18rem' }} >
+              <div className="card m-2 h-72" style={{ width: '18rem' }} >
+
                 {/* Image display */}
                 <img src={`/api/v1/product/get-productPhoto/${p._id}`}
                   className="card-img-top" alt={p.name} />
@@ -183,22 +184,22 @@ function Home() {
                     <h5 className="card-title card-price">
                       {p.price.toLocaleString("en-US", {
                         style: "currency",
-                        currency: "USD",
+                        currency: "INR",
                       })}
                     </h5>
                   </div>
                   <p className="card-text ">
                     {p.description.substring(0, 60)}...
                   </p>
-                  <div className="card-name-price">
+                  <div className="mx-4 ">
                     <button
-                      className="btn btn-info ms-1"
+                      className="bg-black px-2 py-1  text-white"
                       onClick={() => navigate(`/product/${p.slug}`)}
                     >
                       More Details
                     </button>
                     <button
-                      className="btn btn-dark ms-1"
+                      className=" mx-3 bg-black text-white px-2 py-1 rounded-lg"
                       onClick={() => {
                         setCart([...cart, p]);
                         localStorage.setItem(
@@ -208,7 +209,7 @@ function Home() {
                         toast.success("Item Added to cart");
                       }}
                     >
-                      ADD TO CART
+                      Add
                     </button>
                   </div>
                 </div>

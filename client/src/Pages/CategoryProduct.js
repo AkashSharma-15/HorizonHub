@@ -18,7 +18,7 @@ function CategoryProduct() {
             setProducts(data?.products);
             setCategory(data?.category);
         } catch (error) {
-            console.log(error);
+            // console.log(error);
         }
     };
 
@@ -46,7 +46,7 @@ function CategoryProduct() {
                                         <h5 className="card-price">
                                             {p.price.toLocaleString("en-US", {
                                                 style: "currency",
-                                                currency: "USD",
+                                                currency: "INR",
                                             })}
                                         </h5>
                                     </div>

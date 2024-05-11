@@ -20,7 +20,7 @@ function AdminOrders() {
             const { data } = await axios.get('/api/v1/auth/all-orders')
             setOrders(data)
         } catch (error) {
-            console.log(error)
+            // console.log(error)
         }
     }
 
@@ -38,7 +38,7 @@ function AdminOrders() {
             getOrders();
             toast.success("Status updated successfully")
         } catch (error) {
-            console.log(error);
+            // console.log(error);
             toast.error("Error")
         }
     };

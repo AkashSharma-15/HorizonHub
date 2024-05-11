@@ -26,7 +26,7 @@ function CreateCategory() {
                 toast.error(data?.message)
             }
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             toast.error("Something went wrong while creating category")
         }
     }
@@ -40,7 +40,7 @@ function CreateCategory() {
                 setCategories(data?.category);
             }
         } catch (error) {
-            console.log(error);
+            // console.log(error);
             toast.error("Something went wrong in getting catgeory");
         }
     };
@@ -68,7 +68,7 @@ function CreateCategory() {
                 toast.error(data.message);
             }
         } catch (error) {
-            console.log(error);
+            // console.log(error);
         }
     };
 
@@ -84,7 +84,7 @@ function CreateCategory() {
                 toast.error(data.message);
             }
         } catch (error) {
-            console.log(error);
+            // console.log(error);
         }
     };
 

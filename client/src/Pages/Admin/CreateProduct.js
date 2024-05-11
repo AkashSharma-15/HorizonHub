@@ -29,7 +29,7 @@ function CreateProduct() {
         setCategories(data?.category);
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       toast.error("Something went wrong in getting catgeory");
     }
   };
@@ -62,7 +62,7 @@ function CreateProduct() {
         navigate("/dashboard/admin/products");
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       toast.error("something went wrong");
     }
   };

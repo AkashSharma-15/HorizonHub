@@ -13,6 +13,7 @@ export const authorization = async (req, res, next) => {
 
         const decode = Jwt.verify(token, process.env.JWT_SECRET)
         req.user = decode
+
         next()
     } catch (error) {
         console.log("Invalid token")

@@ -108,7 +108,7 @@ user.login = async (req, res) => {
 
 // forgot Password API
 
-user.forgotPassword = async (req, res) => {
+user.forgotPassword = async (req, res) => { 
 
     try {
         const { email, answer, newPassword } = req.body

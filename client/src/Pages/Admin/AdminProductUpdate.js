@@ -38,7 +38,7 @@ function AdminProductUpdate() {
             setShipping(data.product.shipping);
             setCategory(data.product.category._id);
         } catch (error) {
-            console.log(error);
+            // console.log(error);
         }
     };
 
@@ -51,7 +51,7 @@ function AdminProductUpdate() {
                 setCategories(data?.category);
             }
         } catch (error) {
-            console.log(error);
+            // console.log(error);
             toast.error("Something went wrong in getting catgeory");
         }
     };
@@ -90,7 +90,7 @@ function AdminProductUpdate() {
                 navigate("/dashboard/admin/products");
             }
         } catch (error) {
-            console.log(error);
+            // console.log(error);
             toast.error("something went wrong");
         }
     };
@@ -107,7 +107,7 @@ function AdminProductUpdate() {
             toast.success("Product Deleted Succfully");
             navigate("/dashboard/admin/products");
         } catch (error) {
-            console.log(error);
+            // console.log(error);
             toast.error("Something went wrong");
         }
     };
